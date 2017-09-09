@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 def mySqrt_1(x):
     crr = x
     while(crr*crr>x):
@@ -16,7 +16,6 @@ def mySqrt_2(x):
         else:
             left = mid + 1
 
-=======
 def mySqrt_1(x):
     crr = x
     while(crr*crr>x):
@@ -34,4 +33,3 @@ def mySqrt_2(x):
         else:
             left = mid + 1
 
->>>>>>> f591eb1c08fb1fdb158d747d63451b73e2f00dbd

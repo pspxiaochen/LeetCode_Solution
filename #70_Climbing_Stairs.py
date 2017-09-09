@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 def climbStairs_1(n):
     if(n==1):
         return 1
@@ -24,7 +24,6 @@ def climbStairs_3(n):
     for i in range(n):
         a,b=b,a+b
     return a
-=======
 def climbStairs_1(n):
     if(n==1):
         return 1
@@ -50,4 +49,3 @@ def climbStairs_3(n):
     for i in range(n):
         a,b=b,a+b
     return a
->>>>>>> f591eb1c08fb1fdb158d747d63451b73e2f00dbd

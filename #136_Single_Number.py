@@ -11,7 +11,6 @@ def singleNumber_1(nums):
         if value == 1:
             return key
 
-#
 def singleNumber_2(nums):
     result = 0
     for i in nums:

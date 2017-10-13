@@ -19,3 +19,5 @@ def singleNumber_2(nums):
 
 def singleNumber_3(nums):
     return 2*sum(set(nums)) - sum(nums)
+
+print(singleNumber_2([2,3,4,5,3,2,4]))

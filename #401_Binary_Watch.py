@@ -48,7 +48,7 @@ def readBinaryWatch_3(num):
             for num2 in list2:
                 if num2 >= 60:
                     continue
-                res.append(str(num1) + ':' + (str(num2) if num2> 10 else '0'+ str(num2)))
+                res.append(str(num1) + ':' + (str(num2) if num2>= 10 else '0'+ str(num2)))
     return res
 
 def generateDigit(nums,count):
@@ -59,9 +59,8 @@ def generateDigit(nums,count):
 def generateDigitHelper(nums,count,pos,sum,res):
     if count == 0:
         res.append(sum)
-        return
     for i in range(pos,len(nums),1):
         generateDigitHelper(nums,count - 1,i + 1,sum + nums[i],res)
 
-print(readBinaryWatch_3(2))
+print(readBinaryWatch_3(0))
 

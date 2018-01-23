@@ -19,12 +19,16 @@ def getList(root,list):
     if root.right is not None:
         getList(root.right,list)
     return list
+class Solution(object):
+    diff = 9999
+    prev = None
+    def getMinimumDifference_2(self,root):
+        if root is None:
+            return self.diff
+        self.getMinimumDifference_2(root.left)
+        if self.prev != None:
+            self.diff = min(self.diff,root.val - self.prev)
+        self.prev = root.val
+        self.getMinimumDifference_2(root.right)
+        return self.diff
 
-
-node1 = TreeNode(1)
-node2 = TreeNode(3)
-node3 = TreeNode(2)
-node1.right = node2
-node2.left = node3
-
-print(getMinimumDifference(node1))

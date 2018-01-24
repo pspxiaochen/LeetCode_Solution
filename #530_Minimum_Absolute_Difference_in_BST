@@ -19,6 +19,7 @@ def getList(root,list):
     if root.right is not None:
         getList(root.right,list)
     return list
+
 class Solution(object):
     diff = 9999
     prev = None

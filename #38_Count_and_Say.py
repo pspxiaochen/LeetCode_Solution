@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 def countAndSay(n):
     if (n == 1):
         return '1'
@@ -13,8 +12,7 @@ def countAndSay(n):
             count = 1
     return temp
 
-=======
-def countAndSay(n):
+def countAndSay_2(n):
     if (n == 1):
         return '1'
     s = str(countAndSay(n-1)) + '*'
@@ -28,4 +26,3 @@ def countAndSay(n):
             count = 1
     return temp
 
->>>>>>> f591eb1c08fb1fdb158d747d63451b73e2f00dbd

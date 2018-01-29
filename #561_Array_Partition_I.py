@@ -5,4 +5,3 @@ def arrayPairSum(nums):
         out += nums[i]
     return out
 
-a = [1,4,3,2]

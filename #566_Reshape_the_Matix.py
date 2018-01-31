@@ -15,3 +15,17 @@ def matrixReshape(nums,r,c):
             count += 1
         out.append(temp)
     return out
+
+def matrixReshape_2(nums,r,c):
+    m = len(nums)
+    n = len(nums[0])
+    if r * c != m * n:
+        return nums
+    res = [None] * r
+    for i in range(len(res)):
+        res[i] = [0] * c
+    for j in range(r*c):
+        res[j/c][j%c] = nums[j/n][j%n]
+    return res
+
+

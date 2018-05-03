@@ -3,7 +3,6 @@ class ListNode(object):
         self.val = x
         self.next = None
 
-
 def addTwoNumbers(l1, l2):
     return helper(l1, l2, 0)
 

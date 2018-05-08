@@ -1,7 +1,6 @@
 from itertools import takewhile
 def myAtoi(self, s):
     s = s.lstrip()
-
     sign = list(takewhile(lambda ch: ch in set("+-"), s))
     if len(sign) > 1:
         return 0

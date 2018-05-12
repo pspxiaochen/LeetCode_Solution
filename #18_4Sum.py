@@ -41,4 +41,4 @@ def fourSum_2(nums,target):
                         res.add(tuple(l))
     return list(res)
 
-print(fourSum_2([1, 0, -1, 0, -2, 2],0))
+

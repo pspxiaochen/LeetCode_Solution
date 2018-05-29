@@ -6,7 +6,7 @@ def isValid_1(s):
             if(dict[s[i]]<=3):
                 i += 1
             else:
-                if(dict[s[i]]-dict[s[i-1]] ==3):
+                if(dict[s[i]]-dict[s[i-1]] == 3):
                     s = s[:i-1] + s[i+1:]
                     i = i - 1
                 else:
